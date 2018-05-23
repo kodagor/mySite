@@ -1,0 +1,109 @@
+header, section, footer, aside, nav, article {
+  display: block;
+}
+
+body {
+  font-family: Arial, Calibri, sans-serif;
+  line-height: 1.4em;
+  margin: 0px;
+}
+
+.wrapper {
+  width: 1140px;
+  margin: auto;
+}
+
+header {
+  height: 160px;
+}
+
+h1 {
+  /* text-indent: -9999px;*/    /*wstawić wiersz po dodaniu loga */
+  width: 1140px;
+  height: 130px;
+  margin: 0px;
+  margin-top: 20px;     /*usunąć po zrobieniu loga*/
+}
+
+nav, footer {
+  clear: both;
+  color: #eee;
+  background-color: #333;
+  height: 40px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 5px 0px 5px 30px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 40px;
+}
+
+nav li a {
+  color: #ccc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+nav li a:hover{
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+aside {
+  width: 360px;
+  float: left;
+  padding: 0px 0px 0px 20px;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+/******************/
+/* sections *******/
+/******************/
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: visible;
+}
+
+/*** mainSecion ***/
+
+section.mainSection {
+  float: left;
+  width: 759px;
+  border-right: 1px solid #eee;
+  margin-top: 10px;
+}
+
+article {
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+
+/*** main ***/
+
+.main {
+
+}
+
+/*** skills ***/
+.skills {
+
+}
+
