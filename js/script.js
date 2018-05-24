@@ -1,7 +1,7 @@
 $( "#linkOne" ).click( function(e) {
     e.preventDefault();
-    if ($( ".skills" ).hide() == false ) {
-      $( ".skills" ).hide();
+    if ($( ".technologies" ).hide() == false ) {
+      $( ".technologies" ).hide();
     }
     if ($( ".projects" ).hide() == false ) {
       $( ".projects" ).hide()
@@ -9,7 +9,7 @@ $( "#linkOne" ).click( function(e) {
     if ($( ".contact" ).hide() == false ) {
       $( ".contact" ).hide()
     }
-    $( ".main" ).show('eager');
+    $( ".main" ).show();
 });
 
 $( "#linkTwo" ).click( function(e) {
@@ -23,7 +23,7 @@ $( "#linkTwo" ).click( function(e) {
     if ($( ".contact" ).hide() == false ) {
       $( ".contact" ).hide()
     }
-    $( ".skills" ).show('eager');
+    $( ".technologies" ).show();
 });
 
 $( "#linkThree" ).click( function(e) {
@@ -31,13 +31,13 @@ $( "#linkThree" ).click( function(e) {
     if ($( ".main" ).hide() == false ) {
       $( ".main" ).hide();
     }
-    if ($( ".skills" ).hide() == false ) {
-      $( ".skills" ).hide()
+    if ($( ".technologies" ).hide() == false ) {
+      $( ".technologies" ).hide()
     }
     if ($( ".contact" ).hide() == false ) {
       $( ".contact" ).hide()
     }
-    $( ".projects" ).show('eager');
+    $( ".projects" ).show();
 });
 
 $( "#linkFour" ).click( function(e) {
@@ -45,12 +45,12 @@ $( "#linkFour" ).click( function(e) {
     if ($( ".main" ).hide() == false ) {
       $( ".main" ).hide();
     }
-    if ($( ".skills" ).hide() == false ) {
-      $( ".skills" ).hide()
+    if ($( ".technologies" ).hide() == false ) {
+      $( ".technologies" ).hide()
     }
     if ($( ".projects" ).hide() == false ) {
       $( ".projects" ).hide()
     }
-    $( ".contact" ).show('eager');
+    $( ".contact" ).show();
 });
 

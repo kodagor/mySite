@@ -25,6 +25,11 @@ h1 {
   margin-top: 20px;     /*usunąć po zrobieniu loga*/
 }
 
+.nav-row {
+  width: 1140px;
+  margin: auto;
+}
+
 nav, footer {
   clear: both;
   color: #eee;
@@ -34,7 +39,7 @@ nav, footer {
 
 nav ul {
   margin: 0px;
-  padding: 5px 0px 5px 30px;
+  padding: 5px 0px;
 }
 
 nav li {
@@ -67,6 +72,10 @@ footer {
   bottom: 0;
   left: 0;
   text-align: center;
+}
+
+hr {
+  color: #fefefe;
 }
 
 /******************/
@@ -102,8 +111,74 @@ article {
 
 }
 
-/*** skills ***/
-.skills {
+/*** technologies ***/
+.technologies {
 
 }
+.all-techs{
+  width:100%;
+}
+.techs {
+  /*width: 30%;
+  height: 100px;*/
+  float: left;
+  margin: 10px;
+}
 
+/*** contact form ***/
+
+fieldset {
+  /*width: 755px;*/
+  margin-top: 20px;
+  border: 1px solid #d6d6d6;
+  background-color: #fcfcfc;
+  line-height: 1.6em;
+}
+
+legend {
+  font-style: italic;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 250px;
+  border: 1px solid #d6d6d6;
+  padding: 2px;
+  outline: none;
+}
+
+textarea {
+  width: 500px;
+  height: 100px;
+}
+
+input[type="text"]:focus, input[type="text"]:hover,
+input[type="email"]:focus, input[type="email"]:hover,
+textarea:focus, textarea:hover {
+  background-color: #fff;
+  border: 1px solid #999;
+}
+input[type="submit"] {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  transition: border 0.15s;
+  transition: background-color 0.15s;
+}
+input[type="submit"]:hover{
+  border: 1px solid #dadada;
+  background-color: #dadada;
+  color: #333;
+  cursor: pointer;
+}
+.title {
+  float: left;
+  width: 250px;
+  clear: left;
+}
+.submit {
+  width: 520px;
+  text-align: right;
+}

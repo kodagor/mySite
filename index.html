@@ -8,18 +8,22 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>Kodagor web-dev</h1>
-      <nav>
+  <header>
+    <h1>Kodagor web-dev</h1>
+    <nav>
+      <div class="nav-row">
         <ul>
           <li><a href="" id="linkOne">Strona główna</a></li>
-          <li><a href="" id="linkTwo">Umiejętności</a></li>
+          <li><a href="" id="linkTwo">Technologie</a></li>
           <li><a href="" id="linkThree">Projekty</a></li>
           <li><a href="" id="linkFour">Kontakt</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+
     <section class="mainSection main">
       <article>
         <h2>Lorem ipsum</h2>
@@ -37,26 +41,31 @@
       </article>
     </section>
 
-    <section class="mainSection skills hide">
-      <h2>Technologie, z których korzystam</h2>
-      <article>
-        <h3>Web development</h3>
-        <ul>
-          <li>HTML5 / CSS3</li>
-          <li>JavaScript (jQuery) </li>
-          <li>PHP7</li>
-        </ul>
+    <section class="mainSection technologies hide">
+      <h2>Technologie, z którymi pracuję:</h2><br>
+      <article class="all-techs">
+        <p>
+          <div class="techs"><img src="img/logos/HTML5_Logo_512.png" width="100px" alt="pracuję z html5"></div>
+          <div class="techs"><img src="img/logos/css3.png" width="100px"></div>
+          <div class="techs"><img src="img/logos/js-logo.png" width="100px"></div>
+          <div class="techs"><img src="img/logos/jquery.png" width="100px"></div>
+          <div class="techs"><img src="img/logos/PHP-7.png" width="100px"></div>
+          <div class="techs"><img src="img/logos/python.png" width="100px"></div>
+          <div style="clear:both;"></div>
+        </p>
       </article>
-      <article>
-        <h3>Poznaję również tajniki takich technologii jak:</h3>
-        <ul>
-          <li>Python</li>
-          <li>Java</li>
-          <li>Android Studio</li>
-          <li>Windows Server</li>
-          <li>C/C++</li>
-          <li>Oraz wiele, które chciałbym poznać i zrobię to...</li>
-        </ul>
+      <br><hr><br>
+      <article class="all-techs">
+        <h3>W wolnych chwilach poznaję również tajniki poniższych technologii:</h3>
+        <p>
+          <div class="techs"><img src="img/logos/java-logo-vector.png" width="100px"></div>
+          <div class="techs"><img src="img/logos/Android_Studio_icon.svg.png" width="100px"></div>
+          <div class="techs"><img src="img/logos/django.sh-600x600.png" width="100px"></div>
+          <div class="techs"><img src="img/logos/rpi.png" width="100px"></div>
+          <div class="techs"><img src="img/logos/laravel-1.png" width="100px"></div>
+          <div class="techs"><img src="img/logos/sumfony.png" width="100px"></div>
+          <div style="clear:both;"></div>
+        </p>
       </article>
     </section>
 
@@ -75,11 +84,23 @@
     <section class="mainSection contact hide">
       <h2>A tu możesz do mnie napisać</h2>
       <article>
-        <form>
-          <input type="text"><br>
-          <input type="text"><br>
-          <textarea></textarea><br>
-          <button type="submit">Sendnij</button><br>
+        <form action="" method="post">
+          <fieldset>
+            <legend>Formularz kontaktowy</legend>
+              <p>
+                <label class="title" for="name">Imię i Nazwisko</label>
+                <input type="text" name="name" id="name" max-size="50" required><br>
+                <label class="title" for="email">Adres e-mail</label>
+                <input type="email" name="email" id="email" max-size="128" required><br>
+              </p>
+              <p>
+                <label class="title" for="subject">Temat wiadomości</label>
+                <input type="text" name="subject" id="subject" max-size="50" required><br>
+                <label class="title" for="message">Treść wiadomości</label><br>
+                <textarea required></textarea>
+              </p>
+          </fieldset>
+          <div class="submit"><input type="submit" value="Wyślij wiadomość"></div>
         </form>
       </article>
     </section>
